@@ -69,7 +69,7 @@ const Home = () => {
               <option value="lth">Lowest Price</option>
             </Select>
             <ProductListStyle>
-              {(!viewAll ? sortedProducts.slice(0, 10) : sortedProducts).map(
+              {(!viewAll ? sortedProducts.slice(0, 5) : sortedProducts).map(
                 (product: ProductResponse, index: number) => (
                   <ProductCard key={index} product={product} />
                 )
